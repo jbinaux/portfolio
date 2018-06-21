@@ -11,6 +11,7 @@ header
   text-align: center;
   padding: 20px;
   box-shadow: 0px 1px 10px grey;
+  z-index: 2;
 }
 
 nav
@@ -35,7 +36,7 @@ nav
   width: 100px;
   position: absolute;
   top: 50px;
-  right: 10px;
+  right: 0px;
 }
 
 .menu-content ul
@@ -46,6 +47,7 @@ nav
 .menu-content a
 {
   text-decoration: none;
+  color: black;
   padding: 10px;
   display: block;
 }
@@ -60,4 +62,29 @@ input#menu-check
 input#menu-check:checked ~ .menu-content
 {
   display: block;
+  background-color: grey;
+}
+
+.main
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.projet
+{
+  text-align: center;
+  box-shadow:  0px -5px 0px white, 0px 1px 5px grey;
+  width: 100vw;
+  height: 25vh;
+}
+
+.projet:nth-of-type(1)
+{
+  grid-row: 1;
+}
+
+.projet:nth-of-type(2)
+{
+  grid-row: 2;
 }
