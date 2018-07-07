@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+:root
+{
+  --nb-projets: 6;
+}
+
 header
 {
   position: fixed;
@@ -15,6 +20,7 @@ header
   padding: 20px;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
   z-index: 1;
+  font-family: 'Pattaya', sans-serif;
 }
 
 nav
@@ -103,45 +109,52 @@ main a
   min-height: 200px;
   flex: 1;
   position: relative;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.projet h2
+{
+  background: white;
+  border-bottom: 1px solid rgba(50,50,50,.5);
 }
 
 main a:nth-of-type(1) .projet
 {
   background-color: white;
-  z-index: 10;
+  z-index: calc(var(--nb-projets) - 0);
 }
 
 main a:nth-of-type(2) .projet
 {
   background: url(images/mexico.png) no-repeat center;
   background-size: cover;
-  z-index: 9;
+  z-index: calc(var(--nb-projets) - 1);
 }
 
 main a:nth-of-type(3) .projet
 {
   background: url(images/#) no-repeat center;
   background-size: cover;
-  z-index: 8;
+  z-index: calc(var(--nb-projets) - 2);
 }
 
 main a:nth-of-type(4) .projet
 {
-  background: url(images/#) no-repeat center;
+  background: url(images/flexbox.png) no-repeat center;
   background-size: cover;
-  z-index: 7;
+  z-index: calc(var(--nb-projets) - 3);
 }
 
 main a:nth-of-type(5) .projet
 {
   background: url(images/#) no-repeat center;
   background-size: cover;
-  z-index: 6;
+  z-index: calc(var(--nb-projets) - 4);
 }
 
 main a:nth-of-type(6) .projet
 {
   background: url(images/#) no-repeat center;
   background-size: cover;
-  z-index: 5;
+  z-index: calc(var(--nb-projets) - 5);
 }
