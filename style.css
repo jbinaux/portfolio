@@ -14,14 +14,15 @@ header
   background-color: white;
   padding: 20px;
   box-shadow: 0px 1px 10px grey;
-  z-index: 0;
+  z-index: 1;
 }
 
 nav
 {
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 15px;
+  z-index: 1;
 }
 
 .menu
@@ -31,16 +32,12 @@ nav
   background-image: url(images/menu.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  z-index: 1;
-  position: fixed;
-  right: 15px;
 }
 
 .menu-content
 {
   display: none;
   width: 50vw;
-  height: 50vh;
   position: absolute;
   top: 50px;
   right: 0px;
@@ -84,13 +81,13 @@ nav
   background-color: white;
 }
 
-.main
+main
 {
   display: flex;
   flex-direction: column;
   position: relative;
   top: 80px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .projet
