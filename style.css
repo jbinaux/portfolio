@@ -118,6 +118,21 @@ main a
   border-bottom: 1px solid rgba(50,50,50,.5);
 }
 
+.projet .description
+{
+  display: none;
+  text-align: center;
+  height: 170px;
+  background: rgba(0,0,0,.5);
+  color: white;
+}
+
+.projet:hover .description
+{
+  display: flex;
+  align-items: center;
+}
+
 main a:nth-of-type(1) .projet
 {
   background-color: white;
@@ -126,7 +141,7 @@ main a:nth-of-type(1) .projet
 
 main a:nth-of-type(2) .projet
 {
-  background: url(images/mexico.png) no-repeat center;
+  background: url(images/mexico.PNG) no-repeat center;
   background-size: cover;
   z-index: calc(var(--nb-projets) - 1);
 }
@@ -140,7 +155,7 @@ main a:nth-of-type(3) .projet
 
 main a:nth-of-type(4) .projet
 {
-  background: url(images/flexbox.png) no-repeat center;
+  background: url(images/flexbox.PNG) no-repeat center;
   background-size: cover;
   z-index: calc(var(--nb-projets) - 3);
 }
