@@ -1,0 +1,247 @@
+
+/*la grille générale*/
+.main
+{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto 1fr;
+/*pour internet explorer*/
+	display: -ms-grid;
+	-ms-grid-columns: 1fr 2fr 1fr;
+	-ms-grid-rows: auto 1fr;
+}
+
+.title
+{
+	background-color: #D0142C;
+	color: white;
+	grid-column: 1/ 4;
+	grid-row: 1;
+	text-align: center;
+/*pour IE*/
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
+	-ms-grid-row: 1;
+}
+
+/*pour éviter de charger du code inutile sur les écrans plus petits*/
+@media (min-width : 1000px)
+{
+/*le div pour mettre le logo d'aeromexico*/
+	.aeromexico
+	{
+		grid-column: 1;
+		grid-row: 2;
+		background-image: url("http://flotilla-aerea.com/wp-content/uploads/2012/05/aero-mexico-airlines-logo-design1.jpg");
+		background-repeat: no-repeat;
+		background-position: 0% 50%;
+		background-size: 100%;
+		background-color: #003263;
+/*pour IE*/
+		-ms-grid-column: 1;
+		-ms-grid-row: 2;
+	}
+
+/*le div pour mettre le drapeau du mexique*/
+	.mexique
+	{
+		grid-column: 3;
+		grid-row: 2;
+		background-image: url("https://upload.wikimedia.org/wikipedia/en/2/20/Flag_of_Mexico_1917.png");
+		background-repeat: no-repeat;
+		background-position: 0% 50%;
+		background-size: 100%;
+/*pour IE*/
+		-ms-grid-column: 3;
+		-ms-grid-row: 2;
+	}
+
+/*sert à créer le background aux couleurs du mexique*/
+
+	.mexique2
+	{
+		grid-column: 3;
+		grid-row: 2;
+		background: -moz-linear-gradient(left, #016648, #016648 33.33%,#FFFFFF 33.33%, #FFFFFF 66.66%, #D0142C 66.66%, #D0142C);
+		background: -webkit-linear-gradient(left, #016648, #016648 33.33%,#FFFFFF 33.33%, #FFFFFF 66.66%, #D0142C 66.66%, #D0142C);
+		z-index: -1;
+/*pour IE*/
+		-ms-grid-column: 3;
+		-ms-grid-row: 2;
+		background: -ms-linear-gradient(left, #016648, #016648 33.33%,#FFFFFF 33.33%, #FFFFFF 66.66%, #D0142C 66.66%, #D0142C);
+	}
+}
+
+/*la deuxième grille*/
+.page
+{
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	background-color: white;
+/*pour IE*/
+	display: -ms-grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 1fr 1fr 1fr 1fr;
+	-ms-grid-column: 2;
+	-ms-grid-row: 2;
+}
+
+@media (max-width : 1000px)
+{
+	.page
+	{
+		grid-column: 1/ 4;
+/*IE*/
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 3;
+	}
+}
+
+
+/*la troisieme grille*/
+.article
+{
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	grid-template-rows: 1fr;
+/*pour IE*/
+	display: -ms-grid;
+	-ms-grid-columns: 2fr 1fr 2fr;
+	-ms-grid-rows: 1fr;
+}
+
+/*responsive !*/
+
+@media (max-width : 600px)
+{
+	.article
+	{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+/*IE*/
+		display: -ms-grid;
+		-ms-grid-columns: 1fr;
+		-ms-grid-rows: 1fr 1fr;
+	}
+	.image
+	{
+		grid-row: 1;
+/*IE*/
+		-ms-grid-row: 1;
+	}
+	.text
+	{
+		grid-row: 2;
+/*IE*/
+		-ms-grid-row: 2;
+	}
+}
+
+.image
+{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0% 50%;
+}
+
+.text
+{
+	/*border: solid white 5px;*/
+	text-align: justify;
+	text-justify: inter-word;
+	align-self: center;
+	margin: 5px;
+}
+
+/*premier article*/
+
+.article:nth-of-type(1)
+{
+	grid-row: 1;
+	-ms-grid-row: 1;
+}
+
+.article:nth-of-type(1) .image
+{
+	background-image: url("https://image.ibb.co/ktzWso/Agua_Azul_small.jpg");
+}
+
+/*deuxieme article*/
+
+.article:nth-of-type(2)
+{
+	grid-row: 2;
+	-ms-grid-row: 2;
+}
+
+.article:nth-of-type(2) .image
+{
+	background-image: url("https://image.ibb.co/iegKCo/Teotihuacan_small.jpg");
+}
+
+/*troisieme article*/
+
+.article:nth-of-type(3)
+{
+	grid-row: 3;
+	-ms-grid-row: 3;
+}
+
+.article:nth-of-type(3) .image
+{
+	background-image: url("https://image.ibb.co/jvGKTT/Yaxchilan_small.jpg");
+}
+
+/*quatrieme article*/
+
+.article:nth-of-type(4)
+{
+	grid-row: 4;
+	-ms-grid-row: 4;
+}
+
+.article:nth-of-type(4) .image
+{
+	background-image: url("https://image.ibb.co/jmQM8T/Palenque_small.jpg");
+}
+
+/*pour eviter un conflit lorsque < 600px */
+
+@media (min-width : 600px)
+{
+/*articles impaires : image a gauche*/
+	.article:nth-of-type(odd) .image
+	{
+		grid-column: 1;
+		-ms-grid-column: 1;
+	}
+
+/*article impaires : texte a droite*/
+	.article:nth-of-type(odd) .text
+	{
+		grid-column: 2/4;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 2;
+	}
+
+/*article paires : image a droite*/
+	.article:nth-of-type(even) .image
+	{
+		grid-column: 3;
+		-ms-grid-column: 3;
+	}
+
+/*article paires : texte a gauche*/
+	.article:nth-of-type(even) .text
+	{
+		grid-column: 1/3;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 2;
+	}
+}

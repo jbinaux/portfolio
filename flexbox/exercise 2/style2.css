@@ -1,0 +1,57 @@
+.wrapper
+{
+  display: flex;
+}
+
+.wrapper > div
+{
+  font-size: 4vh;
+  margin: .1em;
+  padding: .3em;
+  color: white;
+  background-color: hotpink;
+  flex: 1;
+  border-radius: 3px;
+}
+
+.wrapper .wrapper > div
+{
+  color: hotpink;
+  background-color: pink;
+}
+
+img
+{
+  width: 100%;
+  height: auto;
+}
+
+.wrapper:nth-of-type(1) > div:nth-of-type(1)
+{
+  background: brown;
+}
+
+.wrapper .wrapper:nth-of-type(1) > div:nth-of-type(1)
+{
+  background: red;
+}
+
+.wrapper .wrapper:nth-of-type(1) > div:nth-of-type(2)
+{
+  background: orangered;
+}
+
+.wrapper .wrapper:nth-of-type(1) > div:nth-of-type(3)
+{
+  background: orange;
+}
+
+.wrapper .wrapper:nth-of-type(1) > div:nth-of-type(4)
+{
+  background: gold;
+}
+
+.wrapper .wrapper:nth-of-type(1) > div:nth-of-type(5)
+{
+  background: yellow;
+}

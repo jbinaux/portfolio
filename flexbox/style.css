@@ -1,0 +1,64 @@
+body
+{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: center;
+}
+
+.main
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+nav
+{
+  background-color: lightgrey;
+  flex-grow: 1;
+}
+
+article
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+aside
+{
+  background-color: lightgrey;
+  flex-grow: 1;
+}
+
+header
+{
+  background-color: yellowgreen;
+  height: 10vh;
+}
+
+footer
+{
+  background-color: yellowgreen;
+  height: 10vh;
+}
+
+.carte
+{
+  display: flex;
+  box-shadow: 0px 0px 5px 2px grey;
+  flex-direction: column-reverse;
+  padding: 10px;
+  border: 1px solid;
+}
+
+img
+{
+  width: 200px;
+  height: auto;
+}

@@ -1,0 +1,139 @@
+.form-container
+{
+  display: flex;
+  align-items: center;
+}
+
+.taille-form
+{
+  width: 100%;
+  height: auto;
+}
+
+.button-container
+{
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+}
+
+.button-container button:hover
+{
+  background-color: lightgray;
+}
+
+.formateur
+{
+  background-color: white;
+}
+
+.sign-in
+{
+  align-self: flex-end;
+  background-color: white;
+  border: solid 1px;
+}
+
+.sign-up
+{
+  align-self: flex-start;
+  background-color: red;
+  color: white;
+}
+
+.sign-up:hover
+{
+  background-color: darkred !important;
+}
+
+.shopping
+{
+  align-self: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.foot-image
+{
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  background-image: url(images/42c7fc6c-ada8-41fa-ac3d-df89623ca315.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0px;
+}
+
+.foot-text h1, .foot-text h2
+{
+  color: white;
+}
+
+.gradient
+{
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  color: white;
+  background: linear-gradient(-45deg,#ec5252,#6e1a52);
+  background: -moz-linear-gradient(-45deg,#ec5252,#6e1a52);
+  background: -webkit-linear-gradient(-45deg,#ec5252,#6e1a52);
+}
+
+.content
+{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.medium
+{
+  font-size: 3em;
+}
+
+.section
+{
+  height: 30vh;
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card
+{
+  height: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover
+{
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.14),0 9px 3px -6px rgba(0,0,0,0.12),0 3px 15px 0 rgba(0,0,0,0.2);
+}
+
+.card-image
+{
+  height: 40%;
+  background-image: url(images/258316_55e9_6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:hover .card-image
+{
+  box-shadow: inset 0 0 0 100px rgba(0,0,0,.5);
+}
+
+.card-text
+{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.card-text p:nth-of-type(2)
+{
+  align-self: flex-end;
+}

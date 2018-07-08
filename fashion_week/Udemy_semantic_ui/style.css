@@ -1,0 +1,88 @@
+nav
+{
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 1px 5px lightgrey;
+}
+
+nav .input .navbar-input
+{
+  width: 40vw;
+  background-color: ghostwhite;
+  border: none;
+}
+
+.menu
+{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.input .button
+{
+  color: red;
+  background-color: ghostwhite;
+}
+
+.input .button:hover
+{
+  color: white;
+  background-color: red;
+}
+
+#white
+{
+  background: white;
+}
+
+button#white:hover
+{
+  background: ghostwhite;
+}
+
+button#sign-in:hover
+{
+  background: lightgrey !important;
+}
+
+.foot-image
+{
+  background-image: url(images/42c7fc6c-ada8-41fa-ac3d-df89623ca315.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.foot-text .input
+{
+  width: 100%;
+}
+
+.ui.grid
+{
+  margin: 0;
+  width: 100%;
+}
+
+.foot-text
+{
+  color: white;
+}
+
+.test
+{
+  padding: 10px;
+}
+
+.card
+{
+  margin: 0 !important;
+}
+
+.card:hover
+{
+  box-shadow: 0px 3px 9px 0px #D4D4D5, 0px 0px 3px 2px #D4D4D5;
+}

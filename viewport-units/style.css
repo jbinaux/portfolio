@@ -1,0 +1,25 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main
+{
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  margin-left: 25vw;
+  text-align: justify;
+}
+
+.strip
+{
+  position: relative;
+  transform: translate(-25%, 0);
+  width: 100vw;
+  height: 5vh;
+  background-color: red;
+  text-align: center;
+}
